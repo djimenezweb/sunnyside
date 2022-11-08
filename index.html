@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside (Práctica menú responsive)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <img src="images/logo.svg">
+            <img id="toggle-menu" class="toggle-menu" src="images/icon-hamburger.svg">
+            <nav>
+                <ul id="menu" class="menu">
+                    <li class="menu__item"><a href="#">About</a></li>
+                    <li class="menu__item"><a href="#">Services</a></li>
+                    <li class="menu__item"><a href="#">Projects</a></li>
+                    <li class="menu__item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header__title">WE ARE CREATIVES</h1>
+    </header>
+
+    <main>
+
+        <article class="cards-pair cards-pair--reverse">
+            <div class="article__image">
+                <picture>
+                    <source media="(min-width:768px)" srcset="images/desktop/image-transform.jpg" />
+                    <source media="(min-width:360px)" srcset="images/mobile/image-transform.jpg" />
+                    <img src="images/desktop/image-transform.jpg">
+                </picture>
+            </div>
+            <div class="article__info">
+                <h2 class="article__title">Transform your brand</h2>
+                <p class="article__text">We are a full-service creative agency specializing in helping brands grow fast.
+                    Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a class="article__link article__link--yellow" href="#">LEARN MORE</a>
+            </div>
+        </article>
+
+        <article class="cards-pair">
+            <div class="article__image">
+                <picture>
+                    <source media="(min-width:768px)" srcset="images/desktop/image-stand-out.jpg" />
+                    <source media="(min-width:360px)" srcset="images/mobile/image-stand-out.jpg" />
+                    <img src="images/desktop/image-stand-out.jpg">
+                </picture>
+            </div>
+            <div class="article__info">
+                <h2 class="article__title">Stand out to the right audience</h2>
+                <p class="article__text">Using a collaborative formula of designers, researchers, photographers,
+                    videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+                <a class="article__link article__link--red" href="#">LEARN MORE</a>
+            </div>
+        </article>
+
+        <article class="cards-pair">
+            <article class="article-with-bg article-with-bg--graphicdesign">
+                <h2 class="article-with-bg__title">Graphic Design</h2>
+                <p class="article-with-bg__text">Great design makes you memorable. We deliver artwork that underscores
+                    your brand message and captures potential clients’ attention.</p>
+            </article>
+            <article class="article-with-bg article-with-bg--photography">
+                <h2 class="article-with-bg__title">Photography</h2>
+                <p class="article-with-bg__text">Increase your credibility by getting the most stunning, high-quality
+                    photos that improve your business image.</p>
+            </article>
+        </article>
+
+        <article class="testimonials">
+            <h2 class="testim__title">CLIENT TESTIMONIALS</h2>
+            <ul class="testim__list">
+                <li class="testim__item">
+                    <img class="testim__pic" src="images/image-emily.jpg" alt="">
+                    <p class="testim__text">We put our trust in Sunnyside and they delivered, making sure our needs were
+                        met and deadlines were always hit.</p>
+                    <h3 class="testim__name">Emily R.</h3>
+                    <p class="testim__charge">Marketing Director</p>
+                </li>
+
+                <li class="testim__item">
+                    <img class="testim__pic" src="images/image-thomas.jpg" alt="">
+                    <p class="testim__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+                        success made it a satisfying and enjoyable experience.</p>
+                    <h3 class="testim__name">Thomas S.</h3>
+                    <p class="testim__charge">Chief Operating Officer</p>
+                </li>
+
+                <li class="testim__item">
+                    <img class="testim__pic" src="images/image-jennie.jpg" alt="">
+                    <p class="testim__text">Incredible end result! Our sales increased over 400% when we worked with
+                        Sunnyside. Highly recommended!</p>
+                    <h3 class="testim__name">Jennie F.</h3>
+                    <p class="testim__charge">Business Owner</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="gallery">
+            <picture>
+                <source media="(min-width:768px)" srcset="images/desktop/image-gallery-milkbottles.jpg" />
+                <source media="(min-width:360px)" srcset="images/mobile/image-gallery-milkbottles.jpg" />
+                <img src="images/desktop/image-gallery-milkbottles.jpg">
+            </picture>
+            <picture>
+                <source media="(min-width:768px)" srcset="images/desktop/image-gallery-orange.jpg" />
+                <source media="(min-width:360px)" srcset="images/mobile/image-gallery-orange.jpg" />
+                <img src="images/desktop/image-gallery-orange.jpg">
+            </picture>
+            <picture>
+                <source media="(min-width:768px)" srcset="images/desktop/image-gallery-cone.jpg" />
+                <source media="(min-width:360px)" srcset="images/mobile/image-gallery-cone.jpg" />
+                <img src="images/desktop/image-gallery-cone.jpg">
+            </picture>
+            <picture>
+                <source media="(min-width:768px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" />
+                <source media="(min-width:360px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg" />
+                <img src="images/desktop/image-gallery-sugarcubes.jpg">
+            </picture>
+        </article>
+
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+<footer class="footer">
+
+    <img class="footer__logo" src="images/logo.svg">
+
+    <ul class="footer__list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+    </ul>
+
+    <div class="footer__icons">
+        <img src="images/icon-facebook.svg">
+        <img src="images/icon-instagram.svg">
+        <img src="images/icon-twitter.svg">
+        <img src="images/icon-pinterest.svg">
+    </div>
+
+</footer>
+
+</html>
